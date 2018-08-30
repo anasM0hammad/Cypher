@@ -32,6 +32,8 @@ void takeInput(){
     len = strlen(input);
     
     if(len!= strlen(key)){
+        cout<<"Length of the key and input must be same.\n";
+        cout<<"Please Enter Again...";
         goto takeAgain ;                // If length is not same the enter the details again
     }
     
