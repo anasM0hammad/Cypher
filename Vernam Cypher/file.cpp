@@ -16,7 +16,7 @@ int  len;
 
 void takeInput(){
     
-    takeAgain:                        //Check Point for go to function
+    takeAgain:                        //Check Point for goto 
     
     // 1.Take input
     cout<<"\nEnter the Messege : ";
@@ -49,7 +49,7 @@ void takeInput(){
 
 void encryption(){
     
-    // 1.Add the keyNo and InputNo to get Encrypted message in corresponding numbers 
+    // 1.Add the keyNo and InputNo to get Encrypted message 
     for(int i=0; i<len; i++){
         outputNo[i] = inputNo[i]+keyNo[i];
         
@@ -69,7 +69,22 @@ void encryption(){
 
 void decryption(){
     
+    //1.Subtract the KeyNo from the inputNo to get decrypted messege 
+    for(int i=0; i<len; i++){
+        outputNo[i] = inputNo[i] - keyNo[i];
+        
+        //if subtraction become less than zero add 25
+        if(outputNo[i] < 0){
+            outputNo[i] = outputNo[i] + 25 ;
+        }
+    }
     
+    //2.Convert Output number into Decrypted message
+    for(int i=0; i<len; i++){
+        output[i] = outputNo[i] + 97 ;
+    }
+    
+    cout<<"\nDecrypted messege is : " ;
 }
 
 
