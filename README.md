@@ -9,3 +9,5 @@ You can run the exe file in your PC.
 ## Cipher Techniques
 
 1. Vernam Cipher.
+2. Hill Cipher.
+3. Playfair Cipher
