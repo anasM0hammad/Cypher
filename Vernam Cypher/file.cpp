@@ -20,12 +20,12 @@ void takeInput(){
     
     // 1.Take input
     cout<<"\nEnter the Messege : ";
-    cin>>input;
+    cin.getline(input, 100 , '\n');
     cout<<"\n";
     
     //2.Take key
     cout<<"Enter the key : ";
-    cin>>key;
+    cin.getline(key , 100 , '\n');
     cout<<"\n";
     
     //3. check the length of key and input is same or not
@@ -115,6 +115,7 @@ int main(){
     cout<<"3. Exit \n\n" ;
     cout<<"Enter choice : " ;
     cin>>choice ;
+    cin.get();    
         
     switch(choice){
             
