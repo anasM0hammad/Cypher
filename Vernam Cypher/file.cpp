@@ -6,7 +6,7 @@
 #include<iostream>
 #include<stdlib.h>
 #include<string.h>
-
+#include <conio.h>
 using namespace std ;
 
 char input[100],output[100],key[100];
@@ -141,7 +141,7 @@ int main(){
    
   }
     
-
+getch();
 return 0;
 
 }
