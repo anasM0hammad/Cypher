@@ -1,5 +1,7 @@
 // C++ code to implement Hill Cipher 
 #include <iostream> 
+#include<stdio.h>
+#include<conio.h>
 using namespace std; 
   
 // Following function generates the 
@@ -67,19 +69,26 @@ void HillCipher(string message, string key)
         CipherText += cipherMatrix[i][0] + 65; 
   
     // Finally print the ciphertext 
-    cout << " Ciphertext:" << CipherText; 
+    cout << " \nCipher text:" << CipherText; 
 } 
   
 // Driver function for above code 
 int main() 
 { 
     // Get the message to be encrypted 
-    string message = "ACT"; 
+    char arr[100];
+    char key[100];
+    cout<<"Enter the message : ";
+    gets(arr);
+    //string message = "ACT"; 
   
     // Get the key 
-    string key = "GYBNQKURP"; 
+    cout<<"\nEnter the key : ";
+    gets(key);
+    //string key = "GYBNQKURP"; 
   
-    HillCipher(message, key); 
+    HillCipher(arr, key); 
   
+  getch();
     return 0; 
 } 

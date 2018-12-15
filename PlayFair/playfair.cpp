@@ -1,5 +1,7 @@
 #include<iostream>
+#include<stdio.h>
 #include<string.h>
+#include<conio.h>
 
 using namespace std ;
 
@@ -63,6 +65,7 @@ int main(){
 	cout<<l;
  
   while(count<l){
+  	int sc=0;
      p1 = msg[count];   
      count++ ;
      if(p1==' '){
@@ -168,6 +171,7 @@ int main(){
  		cout<<enc[i];
 	 }
  
- 
+ getch(); 
 	return 0;
+
 }

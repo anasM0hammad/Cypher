@@ -1,4 +1,5 @@
 #include<bits/stdc++.h> 
+#include<conio.h>
 using namespace std; 
   
 // Key for Columnar Transposition 
@@ -132,5 +133,6 @@ int main(void)
     // Calling Decryption function 
     cout << "Decrypted Message: " << decryptMessage(cipher) << endl; 
   
+   getch();
     return 0; 
 } 

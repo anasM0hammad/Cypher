@@ -1,6 +1,7 @@
 	// A C++ program to illustrate Caesar Cipher Technique 
 #include <iostream>
 #include<string.h>
+#include<conio.h>
 #include<stdio.h> 
 using namespace std; 
   
@@ -43,5 +44,6 @@ int main()
     cout << "Text : " << arr; 
     cout << "\nShift: " << s; 
     cout << "\nCipher: " << encrypt(arr, s); 
+    getch();
     return 0; 
 } 
