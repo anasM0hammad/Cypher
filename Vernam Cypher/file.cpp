@@ -38,6 +38,8 @@ void takeInput(){
     }
     
    //4.convert input into corresponding numbers  
+    cout<< "Converting input";
+    cout<<"\n";
     for(int i=0; i<len ; i++){
         inputNo[i] = input[i] - 97 ;
     }
@@ -104,6 +106,7 @@ int main(){
     int choice;
     
     cout<<"\nVernam Cyphering....\n\n";
+    cout<<"Please select available options...";
     
     // Loop will run utill user exit  
     while(true){
